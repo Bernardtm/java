@@ -1,0 +1,16 @@
+Atualizações e melhorias nas bibliotecas:
+JEP 400: UTF-8 por padrão—define UTF-8 como o conjunto de caracteres padrão das APIs Java. Com essa alteração, as APIs que dependem do conjunto de caracteres-padrão se comportarão de forma consistente em todas as implementações, sistemas operacionais, localidades e configurações;
+JEP 408: Servidor Web Simples—uma ferramenta de linha de comando e API para iniciar um servidor web mínimo que serve apenas arquivos estáticos. Esta ferramenta será útil para prototipagem, codificação ad-hoc e propósitos de teste, particularmente em contextos educacionais;
+JEP 416: Reimplementar Core Reflection com Method Handles—reimplementa java.lang.reflect. Method, Constructor e Field sobre os handles de método java.lang.invoke. O método manipula o mecanismo subjacente para reflexão, ele reduz o custo de manutenção e desenvolvimento das APIs java.lang.reflect e java.lang.invoke;
+JEP 418: SPI de resolução de endereço de Internet—define uma interface de provedor de serviço (SPI) para resolução de nome e endereço de host, para que java.net.InetAddress possa usar soluções diferentes da plataforma integrada.
+ 
+Ferramentas
+JEP 413: trechos de código JEP na documentação da API Java—introduz a tag @snippet para o Doclet padrão do JavaDoc para simplificar a inclusão de código-fonte de exemplo na documentação da API.
+ 
+Visualização e incubadoras para versões posteriores do JDK
+JEP 417: Vector API (Terceira Incubadora)—fornece uma API para desenvolvedores alavancarem de forma confiável arquiteturas de CPU que fornecem extensões vetoriais escaláveis. Isso levará a um desempenho superior em comparação com cálculos equivalentes em processadores não estendidos. 
+JEP 419: Função Estrangeira e API de Memória (Segunda Incubadora)—permite que programas Java interoperem com código e dados fora do tempo de execução Java. Ao acessar eficientemente funções externas (ou seja, código fora da JVM) e ao acessar com segurança a memória externa (ou seja, memória não gerenciada pela JVM), a API permite que programas Java chamem bibliotecas nativas e processem dados nativos sem a fragilidade e as armadilhas de JNI.
+JEP 420: Correspondência de padrões para switch (segunda visualização)—aprimora a linguagem de programação Java com correspondência de padrões para expressões e instruções de switch, juntamente com extensões para a linguagem de padrões. Estender a correspondência de padrões para switch permite que uma expressão seja testada em vários padrões, cada um com uma ação específica, para que consultas complexas orientadas a dados possam ser expressas de forma concisa e segura. 
+ 
+Programas Java à prova do futuro
+JEP 421: Finalização obsoleta para remoção—a finalização permanece habilitada por padrão por enquanto, mas pode ser desabilitada para facilitar o teste. Em uma versão futura, ela será desabilitada por padrão e, em uma versão posterior, será removida. Os mantenedores de bibliotecas e aplicativos que dependem da finalização devem considerar a migração para outras técnicas de gerenciamento de recursos, como a instrução try-with-resources statement e limpadores.
