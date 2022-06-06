@@ -2,6 +2,7 @@ import java.math.BigDecimal;
 
 public class Types {
     public static void main(String[] args) {
+
         int primitiveInteger = 0;
         System.out.println(primitiveInteger);
         long primitiveLong = 0;
